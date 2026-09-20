@@ -136,7 +136,7 @@ const vietnamese = {
   "and student supervision.": "và hướng dẫn sinh viên.",
   "Room LA2. 109, A2 Building, Quarter 33, Linh Xuân Ward": "Phòng LA2. 109, Toà nhà A2, Khu phố 33, Phường Linh Xuân",
   "Ho Chi Minh City, Vietnam": "Thành phố Hồ Chí Minh, Việt Nam",
-  "Google Sites profile ↗": "Trang cá nhân trên Google Sites ↗",
+  "Google Sites profile ↗": "Trang cá nhân trên Google Sites ↗", 
   "Research. Teach. Discover.": "Nghiên cứu. Giảng dạy. Khám phá.",
   "Back to top ↑": "Về đầu trang ↑",
   "Ots-Net: Unlocking Mechanistic Interpretability in ECG Arrhythmia Classification": "Ots-Net: Làm rõ cơ chế hoạt động của mô hình trong phân loại rối loạn nhịp tim từ tín hiệu ECG",
