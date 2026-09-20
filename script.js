@@ -103,6 +103,7 @@ const vietnamese = {
   "Design and Implementation of an Unmanned Aerial Vehicle System for Human Detection": "Thiết kế và triển khai hệ thống máy bay không người lái cho nhiệm vụ phát hiện con người",
   "Deep Learning–Based Medical Image Analysis in Cancer Diagnosis": "Ứng dụng học sâu phân tích ảnh y khoa trong chẩn đoán ung thư",
   "YOLO-Based Improvements for Adapting Roadsides Trash Detection in Vietnam": "Phát Triển Và Cải Tiến Mô Hình YOLO Cho Nhận Diện Rác Thải Trong Điều Kiện Thực Tế Tại Việt Nam",
+  "IOT-Enable Digital Twin for Predictive Monitoring of Mini Conveyer Belt": "Ứng Dụng Công Nghệ Bản Sao Kỹ Thuật Số Trong Giám Sát Và Phân Tích Dự Đoán Băng Tải Mini Dựa Trên IoT"
   "05 / HONORS": "05 / GIẢI THƯỞNG",
   "Recognition": "Những dấu mốc",
   "along the way.": "được ghi nhận.",
