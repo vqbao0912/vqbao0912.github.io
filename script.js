@@ -134,7 +134,7 @@ const vietnamese = {
   "Let’s connect.": "Kết nối với tôi.",
   "For academic collaboration, research enquiries,": "Trao đổi về hợp tác học thuật, nghiên cứu",
   "and student supervision.": "và hướng dẫn sinh viên.",
-  "Room LA2. 109, A2 Building, Quarter 33, Linh Xuân Ward": "Phòng LA2. 109, Toà nhà A2, Khu phố 33, Phường Linh Xuân",
+  "LA2. 109, A2 Building, Quarter 33, Linh Xuân Ward": "Phòng LA2. 109, Toà nhà A2, Khu phố 33, Phường Linh Xuân",
   "Ho Chi Minh City, Vietnam": "Thành phố Hồ Chí Minh, Việt Nam",
   "Google Sites profile ↗": "Trang cá nhân trên Google Sites ↗", 
   "Research. Teach. Discover.": "Nghiên cứu. Giảng dạy. Khám phá.",
