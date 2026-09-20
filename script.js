@@ -211,3 +211,11 @@ try { savedLanguage = localStorage.getItem('vqbao-language') === 'vi' ? 'vi' : '
 catch (_) { /* Default to English when browser storage is unavailable. */ }
 setLanguage(savedLanguage);
 switcher.hidden = false;
+
+
+// Keep the homepage language in sync after returning from a course page.
+window.addEventListener('pageshow', event => {
+  if (!event.persisted) return;
+  try { setLanguage(localStorage.getItem('vqbao-language') === 'vi' ? 'vi' : 'en'); }
+  catch (_) { /* Keep the current language if storage is unavailable. */ }
+});

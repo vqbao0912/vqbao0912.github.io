@@ -38,3 +38,9 @@ html[lang="vi"] .text-link {white-space:normal;}
   html[lang="vi"] h1 {font-size:clamp(32px,10vw,43px);}
 }
 @media print {.language-switch {display:none;}}
+
+
+/* Course titles open individual course resource pages. */
+.courses a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:4px 0;text-decoration:underline;text-decoration-color:#6d91a7;text-underline-offset:5px;}
+.courses a::after{content:"→";flex-shrink:0;color:var(--accent);}
+.courses a:hover{color:var(--accent);text-decoration-color:currentColor;}
