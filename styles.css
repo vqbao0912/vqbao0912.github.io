@@ -3,3 +3,38 @@
 /* Readable metadata at every breakpoint. */
 .brand{font-size:12px}.brand small,.eyebrow,.hero .eyebrow,.portrait-top,.portrait-caption>span,.location,.discipline-strip .wrap,.tags span,.project-feature .eyebrow,.pub-type,.student span,footer{font-size:12px}.location{flex-wrap:wrap}.research-grid p{font-size:16px}.publication div>p:last-child{font-size:14px}
 @media(max-width:600px){header{gap:10px;padding:14px 20px}.brand{gap:9px;letter-spacing:1px}.brand small{letter-spacing:1px}.monogram{width:40px;height:44px;flex-shrink:0}.menu{font-size:0;padding:6px 10px}.menu span{font-size:18px;margin:0}html{scroll-padding-top:90px}}
+
+
+/* EN / VI language selector; visible independently of the mobile menu. */
+.language-switch {display:flex; flex-shrink:0; gap:2px; padding:3px; border:1px solid var(--line); border-radius:6px;}
+.language-switch[hidden] {display:none;}
+.language-switch button {min-width:40px; min-height:40px; padding:5px 8px; border:0; border-radius:3px; background:transparent; color:var(--ink); font-size:14px; cursor:pointer;}
+.language-switch button[aria-pressed="true"] {background:var(--navy); color:white; font-weight:700;}
+.language-switch button:hover {box-shadow:inset 0 0 0 1px var(--blue);}
+header {gap:18px;}
+header > .brand {flex-shrink:0;}
+header nav {gap:18px;}
+.discipline-strip .wrap {flex-wrap:wrap;}
+html[lang="vi"] .hero h1>span {line-height:1.45;}
+html[lang="vi"] .text-link {white-space:normal;}
+@media(max-width:1280px) {
+  header {display:flex;flex-wrap:wrap;min-height:80px;padding:14px 24px;gap:12px;}
+  header > .brand {margin-right:auto;}
+  header > .menu {display:block;background:none;border:1px solid var(--line);padding:6px 12px;font-size:14px;min-height:44px;}
+  header > nav {display:none;order:4;width:100%;flex-wrap:wrap;padding:10px 0;gap:12px 24px;}
+  header > nav.open {display:flex;}
+  header .contact-nav {margin-left:0;}
+}
+@media(max-width:600px) {
+  header {padding:12px 16px;gap:8px;}
+  header > .brand {width:calc(100% - 105px);min-width:0;flex-shrink:1;}
+  header .brand small {font-size:10px;letter-spacing:.4px;}
+  header .brand {font-size:11px;letter-spacing:.5px;gap:8px;}
+  header .monogram {width:35px;height:40px;font-size:29px;}
+  header > .language-switch {order:2;}
+  header > .menu {order:3;width:100%;font-size:14px;text-align:left;padding:5px 12px;}
+  header > .menu span {float:right;font-size:18px;}
+  html {scroll-padding-top:145px;}
+  html[lang="vi"] h1 {font-size:clamp(32px,10vw,43px);}
+}
+@media print {.language-switch {display:none;}}
