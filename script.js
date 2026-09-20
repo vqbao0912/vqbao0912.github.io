@@ -23,6 +23,8 @@ document.querySelector('#year').textContent = new Date().getFullYear();
 
 // English text → Vietnamese. Add new entries here when adding website content.
 const vietnamese = {
+  "Fundamentals of Programming for Economics": "Cơ sở lập trình cho kinh tế",
+"Management Information System": "Hệ thống thông tin quản lý",
   "Skip to content": "Chuyển đến nội dung",
   "RESEARCH & TEACHING": "NGHIÊN CỨU & GIẢNG DẠY",
   "Menu": "Danh mục",
