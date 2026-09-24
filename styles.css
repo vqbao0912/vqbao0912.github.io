@@ -44,3 +44,31 @@ html[lang="vi"] .text-link {white-space:normal;}
 .courses a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:4px 0;text-decoration:underline;text-decoration-color:#6d91a7;text-underline-offset:5px;}
 .courses a::after{content:"→";flex-shrink:0;color:var(--accent);}
 .courses a:hover{color:var(--accent);text-decoration-color:currentColor;}
+
+/* Separate journal and conference archives; each disclosure works without JS. */
+#publications .publication-shortcuts{display:flex;flex-wrap:wrap;gap:12px;margin:0 0 40px;}
+#publications .publication-shortcuts a{padding:10px 17px;border:1px solid var(--line);font-size:14px;color:var(--blue);}
+#publications .publication-shortcuts a:hover{background:var(--pale);}
+#publications .publication-group{margin-top:38px;scroll-margin-top:20px;}
+#publications .publication-group+.publication-group{margin-top:64px;}
+#publications .publication-group-heading{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:20px 0;border-top:3px solid var(--navy);}
+#publications .publication-group-heading h3{font:30px/1.35 Georgia,serif;margin:0;}
+#publications .publication-count{font-size:14px;color:var(--muted);margin:0;white-space:nowrap;}
+#publications .publication h4{font:22px/1.45 Georgia,serif;margin:0 0 9px;max-width:910px;overflow-wrap:anywhere;}
+#publications .publication-disclosure summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 20px;background:var(--pale);font-size:15px;list-style:none;}
+#publications .publication-disclosure summary::-webkit-details-marker{display:none;}
+#publications .publication-disclosure summary span{float:none;font-size:inherit;transform:none;}
+#publications .disclosure-copy{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;}
+#publications .remaining-count{font-size:13px;color:var(--muted);}
+#publications .publication-disclosure summary .disclosure-icon{font-size:24px;line-height:1;flex-shrink:0;}
+#publications .publication-disclosure[open] summary .disclosure-icon{transform:rotate(45deg);}
+#publications .publication-disclosure .when-open{display:none;}
+#publications .publication-disclosure[open] .when-open{display:inline;}
+#publications .publication-disclosure[open] .when-closed,
+#publications .publication-disclosure[open] .remaining-count{display:none;}
+@media(max-width:600px){
+  #publications .publication-group-heading{align-items:start;flex-direction:column;gap:6px;}
+  #publications .publication-group-heading h3{font-size:27px;}
+  #publications .publication h4{font-size:21px;}
+  #publications .publication-disclosure summary{padding:16px;}
+}

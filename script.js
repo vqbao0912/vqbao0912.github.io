@@ -159,6 +159,39 @@ const vietnamese = {
   "CONFERENCE · RIVF": "HỘI NGHỊ · RIVF"
 };
 
+Object.assign(vietnamese, {
+  "Research publications.": "Công bố khoa học.",
+  "Journal articles and conference papers, listed by year from newest to oldest.": "Các bài báo tạp chí và hội nghị, sắp xếp theo năm từ mới đến cũ.",
+  "Journal articles": "Bài báo tạp chí",
+  "Conference papers": "Bài báo hội nghị",
+  "publications": "công trình",
+  "Show more journal articles": "Xem thêm bài báo tạp chí",
+  "Show fewer journal articles": "Thu gọn bài báo tạp chí",
+  "Show more conference papers": "Xem thêm bài báo hội nghị",
+  "Show fewer conference papers": "Thu gọn bài báo hội nghị",
+  "JOURNAL · DISCOVER APPLIED SCIENCES": "TẠP CHÍ · DISCOVER APPLIED SCIENCES",
+  "JOURNAL · COMPUTERS IN BIOLOGY AND MEDICINE": "TẠP CHÍ · COMPUTERS IN BIOLOGY AND MEDICINE",
+  "JOURNAL · IEEE ACCESS": "TẠP CHÍ · IEEE ACCESS",
+  "JOURNAL · INTERNATIONAL JOURNAL OF ELECTRICAL AND COMPUTER ENGINEERING": "TẠP CHÍ · INTERNATIONAL JOURNAL OF ELECTRICAL AND COMPUTER ENGINEERING",
+  "JOURNAL · SENSORS": "TẠP CHÍ · SENSORS",
+  "JOURNAL · IAES INTERNATIONAL JOURNAL OF ARTIFICIAL INTELLIGENCE": "TẠP CHÍ · IAES INTERNATIONAL JOURNAL OF ARTIFICIAL INTELLIGENCE",
+  "CONFERENCE · IEEE ISBI": "HỘI NGHỊ · IEEE ISBI",
+  "CONFERENCE · ICCSA": "HỘI NGHỊ · ICCSA",
+  "CONFERENCE · RIVF": "HỘI NGHỊ · RIVF",
+  "CONFERENCE · ISCIT": "HỘI NGHỊ · ISCIT",
+  "CONFERENCE · GEn-CITy": "HỘI NGHỊ · GEn-CITy",
+  "CONFERENCE · ATC": "HỘI NGHỊ · ATC",
+  "CONFERENCE · SICE": "HỘI NGHỊ · SICE",
+  "CONFERENCE · IEEE CYBERNETICSCOM": "HỘI NGHỊ · IEEE CYBERNETICSCOM",
+  "CONFERENCE · ROBOTICS, VISION, SIGNAL PROCESSING AND POWER APPLICATIONS": "HỘI NGHỊ · ROBOTICS, VISION, SIGNAL PROCESSING AND POWER APPLICATIONS",
+  "CONFERENCE · IEEE ICSPCS": "HỘI NGHỊ · IEEE ICSPCS",
+  "CONFERENCE · ADVANCED RESEARCH IN ENGINEERING AND INFORMATION TECHNOLOGY": "HỘI NGHỊ · ADVANCED RESEARCH IN ENGINEERING AND INFORMATION TECHNOLOGY",
+  "CONFERENCE · COMPUTER, COMMUNICATION AND CONTROL TECHNOLOGY": "HỘI NGHỊ · COMPUTER, COMMUNICATION AND CONTROL TECHNOLOGY",
+  "CONFERENCE · DEVELOPMENT OF BIOMEDICAL ENGINEERING IN VIETNAM": "HỘI NGHỊ · DEVELOPMENT OF BIOMEDICAL ENGINEERING IN VIETNAM",
+  "CONFERENCE · SIGTELCOM": "HỘI NGHỊ · SIGTELCOM",
+  "CONFERENCE · IEEE ATC": "HỘI NGHỊ · IEEE ATC"
+});
+
 // Keep the original text nodes so switching languages preserves links, formatting,
 // disclosure state and event handlers. No translated HTML is injected.
 const languageButtons = document.querySelectorAll('[data-language]');
@@ -167,7 +200,7 @@ const translatedNodes = [];
 const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
 while (walker.nextNode()) {
   const node = walker.currentNode;
-  if (node.parentElement.closest('script, style, .language-switch')) continue;
+  if (node.parentElement.closest('script, style, .language-switch, #publications [lang="en"]')) continue;
   const key = node.nodeValue.trim();
   if (Object.prototype.hasOwnProperty.call(vietnamese, key)) {
     const original = node.nodeValue;
@@ -222,3 +255,4 @@ window.addEventListener('pageshow', event => {
   try { setLanguage(localStorage.getItem('vqbao-language') === 'vi' ? 'vi' : 'en'); }
   catch (_) { /* Keep the current language if storage is unavailable. */ }
 });
+
