@@ -128,7 +128,7 @@ const vietnamese = {
   "Vision Transformers for Biomedical Image Classification": "Ứng dụng mô hình Vision Transformer để phân loại hình ảnh y sinh",
   "· Project code: T2023-05-EE · 2024–2025": " · Mã đề tài: T2023-05-EE · 2024–2025",
   "RESEARCH TEAM MEMBER · INTERNATIONAL UNIVERSITY": "THÀNH VIÊN NGHIÊN CỨU · TRƯỜNG ĐẠI HỌC QUỐC TẾ",
-  "Speech emotion recognition on speech recordings through machine learning application": "Nhận dạng cảm xúc dựa trên dữ liệu giọng nói thông qua ứng dụng mô hình học máy",
+  "Speech Emotion Recognition On Speech Recordings Through Machine Learning Application": "Nhận dạng cảm xúc dựa trên dữ liệu giọng nói thông qua ứng dụng mô hình học máy",
   "· Project code: T2022-02-EE · 2022–2023": "· Mã đề tài: T2022-02-EE · 2022–2023",
   "Classification of Monkeypox Based on Digital Images using Deep Learning Approach": "Phân loại Bệnh Đậu Mùa Khỉ dựa trên Hình ảnh kỹ thuật số sử dụng Phương pháp Học sâu",
   "· Project code: T2022-01-EE · 2022–2023": "· Mã đề tài: T2022-01-EE · 2022–2023",
